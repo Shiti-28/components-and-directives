@@ -1,0 +1,20 @@
+<style>
+    .blue{
+        background-color: blue;
+    }
+</style>
+
+<button type="button" (click)="func2()">Display details</button>
+<p>{{names}}</p>
+<div>
+    <ul *ngFor="let i of id">
+        <li [ngClass]="i>=5?'blue':'white'">
+            {{i}}
+        </li>
+    </ul>       
+    <!-- <p *ngIf="func2">{{names}} </p> -->
+    <!-- <p *ngif="i<5" [ngClass]="{'background-color':'white'}">{{id}}</p>
+    <p *ngif="i>=5" [ngClass]="{'background-color':'blue'}">{{names}}</p>         -->
+</div>
+
+
